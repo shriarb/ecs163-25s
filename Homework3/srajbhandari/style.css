@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  margin-top: -10px;
+  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+  font-weight: normal;
+  height: 100vh;
+  padding: 10px;
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+body h1{
+  color:#fff;
+}
+svg {
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius:25px;
+}
+body h1{
+  margin-top: -0.2%;
+  margin-bottom: -0.2%;
+  text-align: center;
+}
+.bar-chart {
+  flex: 0 0 60%;         
+  width: 100%;
+}
+.bar-chart svg {
+  width: 100%;
+  height: 100%;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.viz-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #fffafa; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.viz-box h2 {
+  font-size: 1.1rem;
+  margin: 0 0 5px;
+}
+
+.row {
+  display: flex;
+  flex: 0 0 40%;
+  gap: 10px;
+}
+
+.bar-chart{
+  flex: 0 0 60%;    
+  width: 100%;
+  min-width: 100%;
+  border-radius:25px;
+  margin-bottom: 2%;
+}
+
+.sankey-container,
+.likert-container {
+  flex: 1 1;
+  max-width: 1200px;
+  height: 100%;
+  width: 100%;
+  border-radius:25px;
+  
+}
+.viz-box svg {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bar-header h2 {
+  margin: 0;
+  margin-right: 5rem;
+}
+
+.bar-header > div {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5 rem; 
+}
+#genderDropdown {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+
+.tile.selected {
+  stroke: black;
+  stroke-width: 1.5px;
+  opacity: 1;
+}
+
+.tile {
+  opacity: 0.8;
+}
+
+
+#selection-count {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+}
+
+#tooltip {
+  z-index: 9999;
+}
+#selection-count {
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+}
+
+

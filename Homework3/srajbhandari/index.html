@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Fitness Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+
+</head>
+<body>
+  <div id="tooltip" style="position: absolute; visibility: hidden; background: #fff; padding: 6px 10px; border: 1px solid #aaa; border-radius: 5px; font-size: 12px; pointer-events: none; box-shadow: 0px 2px 8px rgba(0,0,0,0.2); z-index: 10;"></div>
+
+  <h1>Fitness Wearables Dashboard</h1>
+  
+  <div class = "Dashboard">
+    <div id="chart1" class="viz-box bar-chart">
+      <div class="bar-header">
+        <h2>Exercise Frequency by Age Group</h2>
+        <!-- <svg id="chart1-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"></svg> -->
+        <div>
+          <label for="genderDropdown">Filter by Gender:</label>
+          <select id="genderDropdown">
+            <option value="All">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+      <div id="barChartContainer"></div>
+    </div>
+    <div class="row"> 
+        <div id="chart2" class="viz-box sankey-container">
+            <h2>User Flow: Wearable Use → Engagement → Fitness Impact</h2>
+            <svg id="sankey-svg"></svg>
+        </div>
+        <div class="viz-box likert-container" id="chart3">
+            <h2>Perceived Impact of Fitness Wearables</h2>
+            <div id="selection-count"></div>
+            <svg id="likert-svg"></svg>
+          </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
